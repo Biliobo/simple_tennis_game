@@ -1,0 +1,59 @@
+body {
+  background-color: #FFF8DC;
+}
+
+.wrapper {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #9f9;
+}
+
+.box {
+  float: left;
+  height: 100%;
+  width: 600px;
+  position: relative;
+  background-color: #fff;
+}
+
+.panel {
+  float: right;
+  width: 199px;
+}
+
+.level {
+  font-size: 15pt;
+}
+
+.racket {
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  background-color: #f00;
+  right: calc(50% - 100px);
+  bottom: 0;
+}
+
+.ball {
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: calc(50% - 25px);
+  border-radius: 50%;
+  background-color: #000;
+}
+.score-block {
+  margin: 10px;
+  text-align: center;
+  font-size: 20pt;
+}
+.score-block .score {
+  font-size: 25pt;
+}
+
+.start {
+  width: 199px;
+  text-align: center;
+}
