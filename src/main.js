@@ -28,11 +28,18 @@ window.onload = function() {
       case 39:
         racket.moveToRight();
         break;
+      case 13:
+        startGame();
+        break;
     }
   });
 
 
   startButton.addEventListener('click', function(event) {
+    startGame();
+  });
+
+  function startGame() {
     score.reset();
     ball.reset();
     ballAngle = getRandomAngle();
@@ -40,11 +47,7 @@ window.onload = function() {
       clearInterval(gameIntervalId);
     }
     gameIntervalId = beginGame();
-  });
-
-  pauseButton.addEventListener('click', function(event) {
-     console.log('pause');
-  });
+  }
 
   function beginGame() {
     return setInterval(function() {
